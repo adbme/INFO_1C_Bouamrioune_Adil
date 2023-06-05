@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Blog d'évaluations</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html">
+                <img class="logo" src="../pictures/lotus.png" alt="Logo">
+            </a>
+        </div>
+        <div class="dropdown">
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="tarif.html">TARIFS</a></li>
+                    <li><a href="map.html">ME TROUVER</a></li>
+                    <li><a href="apropos.html">À PROPOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><button onclick="window.location.href='contact.html'">CONTACT</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <h1>Blog d'évaluations</h1>
+
+    <!-- Système de notation par étoiles -->
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+
+    <!-- Formulaire pour ajouter des commentaires -->
+    <form id="commentForm">
+        <h2>Ajouter un commentaire</h2>
+        <input type="text" id="name" placeholder="Nom" required>
+        <textarea id="comment" placeholder="Commentaire" required></textarea>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <!-- Section pour afficher les commentaires -->
+    <div id="comments">
+        <h2>Commentaires</h2>
+        <p id="counter">Evaluations: 0</p>
+        <ul id="commentList"></ul>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,197 @@
+/* Style the heading element */
+h1 {
+    color: #333;
+    /* Set the text color to dark gray */
+    text-align: center;
+    /* Center align the heading */
+    margin: 40px;
+    transition: 0.3s;
+
+}
+
+/* Style paragraph elements */
+p {
+    color: #666;
+    /* Set the text color to light gray */
+    line-height: 1.5;
+    /* Set the line height to 1.5 times the font size */
+}
+
+/* Make sure images fit within their container */
+.reiki {
+    max-width: 100%;
+    /* Set the maximum width of the image to 100% of its container */
+    height: auto;
+    /* Automatically adjust the height to maintain aspect ratio */
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+/* Style table elements */
+table {
+    width: 100%;
+    /* Set the table width to 100% of its container */
+    border-collapse: collapse;
+    /* Collapse the borders between table cells */
+    margin-bottom: 20px;
+    /* Add a margin at the bottom of the table */
+}
+
+/* Style table header and data cells */
+th,
+td {
+    border: 1px solid #ccc;
+    /* Set a 1px solid border with light gray color */
+    padding: 10px;
+    /* Add 10px of padding around the table cells */
+    text-align: center;
+    /* Center align the text within the cells */
+}
+
+/* Style links */
+a {
+    color: #00a0e9;
+    /* Set the link color to blue */
+    text-decoration: none;
+    /* Remove the underline from links */
+}
+
+/* Style links on hover */
+a:hover {
+    text-decoration: underline;
+    /* Add underline to links on hover */
+}
+
+/* Style the "contenuApropos" class */
+.contenuApropos {
+    margin-top: 100px;
+    /* Add a top margin of 100px */
+    margin-bottom: 70px;
+    /* Add a bottom margin of 70px */
+    padding-left: 20%;
+    /* Add left padding of 20% */
+    padding-right: 20%;
+    /* Add right padding of 20% */
+    padding-top: 30px;
+    /* Add top padding of 30px */
+    padding-bottom: 30px;
+    /* Add bottom padding of 30px */
+}
+
+/* Set the cursor to a pointer for elements with the "pointer" class */
+.pointer {
+    cursor: pointer;
+}
+
+/* iframe */
+
+iframe {
+    margin-bottom: 100px;
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+}
+
+.mecontacter {
+    color: #00a0e9;
+}
+
+/* media querys pour en dessous de */
+
+@media screen and (max-width: 768px) {
+    .contenuApropos {
+
+        padding-left: 10%;
+        /* Add left padding of 20% */
+        padding-right: 10%;
+        /* Add right padding of 20% */
+
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .contenuApropos {
+
+        padding-left: 4%;
+        /* Add left padding of 20% */
+        padding-right: 4%;
+        /* Add right padding of 20% */
+
+    }
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.column img:hover {
+    transform: scale(1.1);
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+.h1 {
+    background-color: #19B874;
+
+    background-image: linear-gradient(to right, #19B874, #E463AA);
+    border-radius: 10px;
+    color: white;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 928px) {
+    .h1 {
+        margin: 2%;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 928px) {
+    .h1 {
+        margin: 2%;
+        font-size: 40px;
+
+    }
+
+}
+
+.column img {
+    width: 100%;
+}

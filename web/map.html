@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ME TROUVER</title>
+    <link rel="stylesheet" href="../css/map.css"> <!-- Importe le fichier CSS pour la carte -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Importe le fichier CSS pour le style général -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Importe la police de caractères Raleway depuis Google Fonts -->
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html">
+                <img class="logo" src="../pictures/lotus.png" alt="Logo"> <!-- Affiche le logo -->
+            </a>
+        </div>
+        <div class="dropdown">
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">ACCUEIL</a></li> <!-- Lien vers la page d'accueil -->
+                    <li><a href="tarif.html">TARIFS</a></li> <!-- Lien vers la page des tarifs -->
+                    <li><a href="map.html">ME TROUVER</a></li> <!-- Lien vers la page de localisation -->
+                    <li><a href="apropos.html">À PROPOS</a></li> <!-- Lien vers la page "À PROPOS" -->
+                    <li><a href="blog.html">BLOG</a></li> <!-- Lien vers la page du blog -->
+                    <li><button onclick="window.location.href='contact.html'">CONTACT</button></li>
+                    <!-- Bouton qui redirige vers la page de contact -->
+                </ul>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleNav()"> <!-- Bouton pour afficher le menu sur les appareils mobiles -->
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <div id="gmap" class="title center">
+        <h1>VOUS POUVEZ ME TROUVER</h1> <!-- Titre de la page -->
+    </div>
+
+    <!-- Demande d'un texte formaté -->
+
+    <iframe id="pully" class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.094442048404!2d6.644670251043148!3d46.50878969943889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c2fb0ff7ffd45%3A0x68d943abc645e638!2sChem.%20de%20Carvalho%207%2C%201009%20Pully!5e0!3m2!1sfr!2sch!4v1684312237720!5m2!1sfr!2sch"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Affiche une carte Google Maps intégrée -->
+
+    <!-- Demande d'une image -->
+
+    <div class="image-grid">
+        <h1>Pully</h1>
+        <img src="../pictures/pully.png" alt="Image 1">
+        <img src="../pictures/pully2.jpg" alt="Image 2">
+        <img src="../pictures/pully3.jpg" alt="Image 3">
+    </div>
+
+    <!-- Demande d'une vidéo ou audio -->
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="../medias/pully.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+        <div class="text-overlay">
+            <p>Présentation de Pully - Collège Champittet </p>
+
+        </div>
+    </div>
+
+
+    <!-- Demande d'ancrages / renvois -->
+
+    <a href="#gmap">plan</a>
+    <a href="#pully">Aller à la section 2</a>
+
+    <script src="../scripts/script.js"></script> <!-- Importe le fichier JavaScript -->
+</body>
+
+</html>

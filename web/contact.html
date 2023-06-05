@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Page de contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html">
+                <img class="logo" src="../pictures/lotus.png" alt="Logo">
+            </a>
+        </div>
+        <div class="dropdown">
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="tarif.html">TARIFS</a></li>
+                    <li><a href="map.html">ME TROUVER</a></li>
+                    <li><a href="apropos.html">À PROPOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><button ock="window.location.href='contact.html'">CONTACT</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <!-- deux options pour prendre contact -->
+    <div class="content">
+        <h1>CHOISISSEZ VOTRE MÉTHODE DE RDV</h1>
+
+        <!-- Contatcer avec un appel -->
+        <button onclick="call()" class="buttonContact">
+            <img class="imgContact" src="../pictures/phone-call.png" alt="">
+            <span class="divText">CONTACTER AVEC UN APPEL</span>
+        </button>
+        <p>Simple et rapide prise de rdv ⇧</p>
+        <!-- contacter avec un mail en remplissant un formulaire -->
+        <button onclick="mail()" class="buttonContact">
+            <img class="imgContact" src="../pictures/paper-plane.png" alt="">
+            <span class="divText">CONTACTER AVEC UN MAIL</span>
+        </button>
+        <p>Court formulaire à remplir ⇧</p>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
+
+
+<!-- page contact initiale mais avec les erreurs de w3c -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html">
+                <img class="logo" src="../pictures/lotus.png" alt="Logo">
+            </a>
+        </div>
+        <div class="dropdown">
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">ACCUEIL</a></li>
+                    <li><a href="../web/tarif.html">TARIFS</a></li>
+                    <li><a href="../web/map.html">ME TROUVER</a></li>
+                    <li><a href="../web/apropos.html">À PROPOS</a></li>
+                    <li><a href="/web/blog.html">BLOG</a></li>
+                    <li><a href="../web/contact.html"><button onclick="window">CONTACT</button></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+
+
+    <div class="content">
+        <h1>CHOISISSEZ VOTRE MÉTHODE DE RDV</h1>
+        <button onclick="call()" class="buttonContact">
+            <div class="iconDiv"><img class="imgContact" src="../pictures/phone-call.png" alt=""></div>
+            <div class="divText">CONTACTER AVEC UN APPEL <p>Simple et rapide prise de rdv ⇧</p>
+            </div>
+
+        </button>
+
+
+        <button onclick="mail()" class="buttonContact">
+            <div class="iconDiv"><img class="imgContact" src="../pictures/paper-plane.png" alt=""></div>
+            <div class="divText">CONTACTER AVEC UN MAIL <p>Court formulaire à remplir ⇧</p>
+            </div>
+        </button>
+    </div>
+
+</body>
+
+<script src="/scripts/script.js"></script>
+<script>
+
+</script>
+
+</html> -->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/contact/contacttel.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Contact par téléphone</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html">
+                <img class="logo" src="../../pictures/lotus.png" alt="Logo">
+            </a>
+        </div>
+        <div class="dropdown">
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../../index.html">ACCUEIL</a></li>
+                    <li><a href="../tarif.html">TARIFS</a></li>
+                    <li><a href="../map.html">ME TROUVER</a></li>
+                    <li><a href="../apropos.html">À PROPOS</a></li>
+                    <li><a href="../blog.html">BLOG</a></li>
+                    <li><button onclick="window.location.href='../contact.html'">CONTACT</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <h1>Contacter avec un appel</h1>
+            <a href="tel:+41782095808" class="call-button">Appeler</a>
+            <p class="disclaimer">En cliquant sur le bouton, vous acceptez d'initier un appel vers notre numéro suisse.
+            </p>
+            <p class="alert" id="mobile-alert" style="display: none;">⚠ Disponible uniquement sur mobile. Veuillez
+                prendre rendez-vous via le formulaire : <a href="../contact/contactmail.html">📧</a></p>
+        </div>
+    </div>
+
+    <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/tel.js"></script>
+</body>
+
+</html>

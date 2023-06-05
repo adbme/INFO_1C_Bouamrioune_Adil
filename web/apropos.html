@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À PROPOS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/apropos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- En-tête -->
+        <div class="logo-container">
+            <a href="../index.html">
+                <img class="logo" src="../pictures/lotus.png" alt="Logo">
+            </a>
+        </div>
+        <div class="dropdown">
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <!-- Liens de navigation -->
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="tarif.html">TARIFS</a></li>
+                    <li><a href="map.html">ME TROUVER</a></li>
+                    <li><a href="apropos.html">À PROPOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><button onclick="window.location.href='contact.html'">CONTACT</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleNav()">
+            <!-- Bouton du menu burger -->
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <div id="top" class="contenuApropos">
+        <!-- Contenu de la page À PROPOS -->
+
+        <h1>À propos de Assia Gherbi</h1>
+
+        <p>
+            Bienvenue sur notre site de massage ! Nous sommes une équipe de professionnels dédiés à vous offrir une
+            expérience de massage relaxante et thérapeutique.
+        </p>
+
+        <h2>Nos services</h2>
+
+        <table>
+            <!-- Tableau des services -->
+            <tr>
+                <th>Reiki</th>
+                <th>Réflexologie</th>
+                <th>lOREM ipsum</th>
+            </tr>
+            <tr>
+                <td>Le massage suédois est idéal pour détendre les muscles et améliorer la circulation sanguine.</td>
+                <td>Le massage thaïlandais combine des étirements et des pressions pour soulager les tensions
+                    musculaires.</td>
+                <td>Le massage aux pierres chaudes utilise des pierres lisses et chauffées pour détendre les muscles en
+                    profondeur.</td>
+            </tr>
+        </table>
+
+        <h2>Moi</h2>
+
+        <p>
+            Je suis une masseuse expérimentée, formée pour répondre à vos besoins spécifiques. N'hésitez pas à me
+            contacter pour prendre rendez-vous avec moi et profiter d'une séance de massage personnalisée.
+            <a href="contact.html">Contactez-moi</a> pour prendre rendez-vous.
+        </p>
+
+        <h2>Emplacement</h2>
+
+        <p>
+            Notre salon de massage est idéalement situé au centre-ville, avec un accès facile aux transports en commun.
+            <a href="map.html">Cliquez ici</a> pour obtenir des indications détaillées sur la façon de nous
+            trouver.
+        </p>
+
+        <h2>Reiki / Réflexologie</h2>
+
+        <img class="reiki" src="../pictures/reiki.jpg" alt="Image de massage">
+
+        <h2>Reiki / <a href="https://www.youtube.com/watch?v=xLZzKQBETL0">sources</a></h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xLZzKQBETL0" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <h2>Réflexologie / <a href="https://www.youtube.com/watch?v=w0EzodzR4Qo">sources</a></h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w0EzodzR4Qo" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <div class="row">
+            <!-- Grille d'images -->
+            <div class="column">
+                <img src="../pictures/grid/4.png" alt="image4">
+                <img src="../pictures/grid/6.png" alt="image6">
+                <h1 class="h1">soulagement</h1>
+                <img src="../pictures/grid/2.png" alt="image2">
+                <img src="../pictures/grid/3.png" alt="image3">
+            </div>
+            <div class="column">
+                <h1 class="h1">relaxation</h1>
+                <img src="../pictures/grid/5.png" alt="image5">
+                <img src="../pictures/grid/7.png" alt="image7">
+            </div>
+            <div class="column">
+                <img src="../pictures/grid/8.png" alt="image8">
+                <h1 class="h1">Harmonie</h1>
+                <img src="../pictures/grid/9.png" alt="image9">
+            </div>
+        </div>
+
+        <h2 class="pointer mecontacter" onclick="contact()">Me contacter ⇨</h2>
+
+        <p>
+            Pour plus d'informations ou pour prendre rendez-vous, veuillez nous contacter :
+            <br>
+            Téléphone : 076 636 49 52
+            <br>
+            Email : test@exemple.com
+        </p>
+
+        <p id="contact">
+            <a href="#top">Retour en haut de la page</a>
+        </p>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

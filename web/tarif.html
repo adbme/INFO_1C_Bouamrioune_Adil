@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/tarifs.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>TARIFS</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html">
+                <img class="logo" src="../pictures/lotus.png" alt="Logo">
+            </a>
+        </div>
+        <div class="dropdown">
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">ACCUEIL</a></li>
+                    <li><a href="tarif.html">TARIFS</a></li>
+                    <li><a href="map.html">ME TROUVER</a></li>
+                    <li><a href="apropos.html">À PROPOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><button onclick="window.location.href='contact.html'">CONTACT</button></li>
+                    <!-- Bouton pour contacter -->
+                </ul>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <div class="about-section">
+        <h1>TARIFS</h1>
+        <p>Profitez de nos tarifs compétitifs pour nos services de bien-être.</p>
+        <p>Nous offrons une variété de traitements pour répondre à vos besoins.</p>
+        <img src="../pictures/arrow.png" alt="Emoji vibrant">
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="../pictures/reflexologie.png" alt="Jane" style="width:100%">
+                <div class="container">
+                    <h2>Réflexologie</h2>
+                    <p class="title">80 CHF/h</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p><button onclick="rdv()" class="button">RDV</button></p>
+                    <!-- Bouton pour prendre rendez-vous -->
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="../pictures/reiki.png" alt="Mike" style="width:100%">
+                <div class="container">
+                    <h2>Reiki</h2>
+                    <p class="title">80 CHF/h</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p><button onclick="rdv()" class="button">RDV</button></p>
+                    <!-- Bouton pour prendre rendez-vous -->
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="../pictures/massage.png" alt="John" style="width:100%">
+                <div class="container">
+                    <h2>Massages</h2>
+                    <p class="title">20 CHF</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p><button onclick="rdv()" class="button">RDV</button></p>
+                    <!-- Bouton pour prendre rendez-vous -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

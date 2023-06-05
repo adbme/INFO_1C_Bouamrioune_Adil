@@ -1,0 +1,82 @@
+body html {
+    overflow: hidden;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.space {
+    margin-top: 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.call-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #19B874;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.call-button:hover {
+    background-color: #2980b9;
+}
+
+.disclaimer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.content {
+    position: fixed;
+    top: 100px;
+    /* ajustez cette valeur en fonction de la hauteur de l'header */
+    left: 0;
+    height: calc(100% - 100px);
+    /* ajustez cette valeur en fonction de la hauteur de l'header */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-animation {
+    animation: vibration 0.4s infinite;
+    /* appel de l'animation créée en bas */
+    width: 20%;
+    transition: 0.3s;
+}
+
+/* animation pour faire bouger l'image de haut en bas en se bsant sur l'axe x */
+@keyframes vibration {
+    0% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+}

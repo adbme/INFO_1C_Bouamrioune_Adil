@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RDV par mail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/contact/contactmail.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html">
+                <img class="logo" src="../../pictures/lotus.png" alt="Logo">
+            </a>
+        </div>
+        <div class="dropdown">
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">ACCUEIL</a></li>
+                    <li><a href="../tarif.html">TARIFS</a></li>
+                    <li><a href="../map.html">ME TROUVER</a></li>
+                    <li><a href="../apropos.html">À PROPOS</a></li>
+                    <li><a href="../blog.html">BLOG</a></li>
+                    <li><a class="bouttonContact" href="../contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <form id="regForm" action="../validation.html">
+        <h1>RDV PAR MAIL:</h1>
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab top">Nom Prénom :
+            <p><input type="text" class="top" placeholder="Nom..." oninput="this.className = ''" name="fname"></p>
+            <p><input type="text" class="minitop bottom" placeholder="Prénom..." oninput="this.className = ''"
+                    name="lname"></p>
+        </div>
+        <div class="tab top">Moyen de contact :
+
+            <div class="choice top">
+                <label for="tel">Téléphone</label>
+                <input type="radio" class="checkBox checkBox1" id="tel" name="moyen_contact" value="tel" required>
+            </div>
+
+            <div class="choice minitop bottom">
+                <label for="email">Email</label>
+                <input type="radio" class="checkBox checkBox2" id="email" name="moyen_contact" value="email" required>
+            </div>
+
+            <label for="contactMail">Contact mail :</label>
+            <input class="top bottom" type="email" placeholder="contact mail..." id="contactMail" name="contactMail"
+                required>
+            <label for="contactTel">Contact tel :</label>
+            <input class=" bottom" type="number" placeholder="contact tel..." id="contactTel" name="contactTel"
+                required>
+
+            <label for="password">Éventuel mot de passe (en cas d'utilisateur en double) :</label>
+            <input class="top bottom" type="password" placeholder="password..." id="password" name="password" required>
+        </div>
+        <div class="tab">
+            <div class="top">
+                <label>Nom technique :</label>
+                <div class="dropdown top">
+                    <button class="dropdown-toggle bottom" type="button" id="nomTechniqueDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sélectionner votre ou vos technique/s souhaitées
+                    </button>
+
+                    <div class="dropdown-menu bottom top" aria-labelledby="nomTechniqueDropdown">
+                        <label class="dropdown-item">
+                            <input type="checkbox" name="nom_technique[]" value="Titre 1"> Réflexologie
+                        </label>
+                        <label class="dropdown-item">
+                            <input type="checkbox" name="nom_technique[]" value="Titre 2"> Reiki
+                        </label>
+                        <label class="dropdown-item">
+                            <input type="checkbox" name="nom_technique[]" value="Titre 3"> choix 3
+                        </label>
+                        <label class="dropdown-item">
+                            <input type="checkbox" name="nom_technique[]" value="Titre 4"> choix 4
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab">
+            <div class="bottom">
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="bottom">
+                <label for="heure">Heure :</label>
+                <input type="time" id="heure" name="heure" required>
+            </div>
+
+            <label for="lien">Éventuel lien (optionnel) :</label>
+            <input class="bottom" type="url" placeholder="url..." id="lien" name="lien" required>
+        </div>
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Retour</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+            </div>
+        </div>
+        <!-- Circles which indicate the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+    </form>
+
+    <script src="../../scripts/contact.js">
+
+    </script>
+    <script src="../../scripts/script.js"></script>
+</body>
+
+</html>

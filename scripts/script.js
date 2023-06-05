@@ -1,9 +1,11 @@
 // header
 function toggleNav() {
     var navLinks = document.getElementById('nav-links');
+    var aside = document.getElementById('asside')
     var logo = document.getElementById('logo');
 
     if (navLinks.style.display === 'block') {
+        aside.style.marginTop = '0'
         navLinks.style.display = 'none'
         // logo.style.height = "50px"
 
@@ -12,7 +14,7 @@ function toggleNav() {
 
     } else {
         navLinks.style.display = 'block';
-
+        aside.style.marginTop = '80px'
         // logo.style.height = "100px"
 
     }

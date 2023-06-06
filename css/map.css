@@ -110,3 +110,43 @@ img:hover {
     display: flex;
     justify-content: space-around;
 }
+
+.texte {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    transition: 0.3s;
+}
+
+
+.texte {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    transition: 0.3s;
+}
+
+.texte1 {
+    background-color: #ebebeb;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.texte2 {
+    margin-top: 200px;
+    background-color: #ebebeb;
+}
+
+.highlight {
+
+    font-weight: bold;
+    color: #00d378;
+}
+
+.bold {
+    font-weight: bold;
+}

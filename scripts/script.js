@@ -51,7 +51,7 @@ function rdv() {
     window.location.href = "contact.html";
 }
 
-// close pub
+// fermer pub
 
 function fermer() {
     var asside = document.getElementById('asside')

@@ -45,14 +45,14 @@
 
     <!-- Demande d'un texte formaté -->
 
-    <iframe id="pully" class="map"
+    <iframe class="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.094442048404!2d6.644670251043148!3d46.50878969943889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c2fb0ff7ffd45%3A0x68d943abc645e638!2sChem.%20de%20Carvalho%207%2C%201009%20Pully!5e0!3m2!1sfr!2sch!4v1684312237720!5m2!1sfr!2sch"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Affiche une carte Google Maps intégrée -->
 
     <!-- Demande d'une image -->
 
-    <div class="image-grid">
+    <div id="pully" class="image-grid">
         <h1>Pully</h1>
         <img src="../pictures/pully.png" alt="Image 1">
         <img src="../pictures/pully2.jpg" alt="Image 2">
@@ -75,8 +75,10 @@
 
     <!-- Demande d'ancrages / renvois -->
 
-    <a href="#gmap">plan</a>
-    <a href="#pully">Aller à la section 2</a>
+    <div class="links">
+        <a href="#gmap">plan ⇧</a>
+        <a href="#pully">pully ⇧</a>
+    </div>
 
     <script src="../scripts/script.js"></script> <!-- Importe le fichier JavaScript -->
 </body>

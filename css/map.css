@@ -1,62 +1,73 @@
 .map {
     width: 100%;
     height: 500px;
-
+    /* Définit la largeur et la hauteur de la carte */
 }
 
 .center {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Centre les éléments horizontalement et verticalement */
 }
 
 h1 {
     width: 100%;
     padding: 3%;
+    /* Définit la largeur et le rembourrage du titre */
 }
 
 .title {
     margin-top: 70px;
+    /* Marge supérieure du titre */
 }
 
 .image-grid {
     margin: 10%;
     display: flex;
     flex-wrap: wrap;
+    /* Marge et disposition en grille pour les images */
 }
 
 .image-grid img {
-
     margin: 10px;
     width: 30.33%;
     height: auto;
     box-sizing: border-box;
+    /* Marge, largeur, hauteur et boîte englobante des images dans la grille */
 }
 
+/* En dessous de la largeur 840px, l'image de la grille prendra 100% de largeur */
 @media screen and (max-width: 840px) {
     .image-grid img {
         width: 100%;
     }
 }
 
+/* Transition pour avoir un petit effet d'animation */
 img {
     transition: 0.3s;
+    /* Ajoute une transition de 0,3 seconde à toutes les images */
 }
 
+/* La taille de l'image sera de 1.1 en hover */
 img:hover {
     transform: scale(1.1);
-
+    /* Augmente l'échelle de l'image à 1.1 au survol */
 }
 
+/* Le conteneur par-dessus la vidéo */
 .video-container {
     position: relative;
     width: 100%;
     display: block;
     margin: 0 auto;
+    /* Position, largeur, affichage et marge du conteneur vidéo */
 }
 
 .video-container video {
     width: 100%;
+    /* Définit la largeur de la vidéo à 100% */
 }
 
 .video-container .text-overlay {
@@ -71,14 +82,31 @@ img:hover {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
     transition: opacity 0.3s ease;
+    /* Position, taille, affichage, opacité et transition de l'overlay de texte */
 }
 
 .video-container:hover .text-overlay {
     opacity: 1;
+    /* Augmente l'opacité de l'overlay de texte au survol */
 }
 
 .video-container .text-overlay p {
     font-size: 40px;
     text-align: center;
     color: white;
+    /* Taille, alignement et couleur du texte de l'overlay */
+}
+
+.links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #00a0e9;
+}
+
+.links {
+    padding: 10%;
+    background-color: #333;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
 }

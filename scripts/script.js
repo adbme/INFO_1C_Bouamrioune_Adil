@@ -43,9 +43,12 @@ function call() {
 }
 
 // tarifs
+function rdv2() {
+    window.location.href = "web/contact.html";
+}
 
 function rdv() {
-    window.location.href = "../web/contact.html";
+    window.location.href = "contact.html";
 }
 
 // close pub
